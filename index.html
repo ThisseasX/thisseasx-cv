@@ -1,0 +1,425 @@
+<!--
+
+████████╗██╗  ██╗██╗███████╗███████╗███████╗ █████╗ ███████╗██╗  ██╗
+╚══██╔══╝██║  ██║██║██╔════╝██╔════╝██╔════╝██╔══██╗██╔════╝╚██╗██╔╝
+   ██║   ███████║██║███████╗███████╗█████╗  ███████║███████╗ ╚███╔╝ 
+   ██║   ██╔══██║██║╚════██║╚════██║██╔══╝  ██╔══██║╚════██║ ██╔██╗ 
+   ██║   ██║  ██║██║███████║███████║███████╗██║  ██║███████║██╔╝ ██╗
+   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ThisseasX | Senior Software Engineer</title>
+
+    <!-- Deployed URL -->
+    <base href="https://thisseasx.github.io/thisseasx-cv/" />
+
+    <!-- Change base url for development -->
+    <script>
+      if (window.location.hostname === 'localhost') {
+        document.querySelector('base').setAttribute('href', '/');
+      }
+    </script>
+
+    <!-- Assets -->
+    <link rel="icon" href="icons/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Deferred Scripts -->
+    <script defer src="scripts/skills.js"></script>
+    <script defer src="scripts/collapse.js"></script>
+    <script defer src="registerSW.js"></script>
+
+    <!-- HTML Meta Tags -->
+    <meta
+      name="description"
+      content="Thisseas Xanthopoulos, Senior Software Engineer"
+    />
+    <meta name="author" content="ThisseasX" />
+    <meta name="contact" content="thisseasx@yahoo.com" />
+    <meta
+      name="keywords"
+      content="Thisseas Xanthopoulos, Senior Software Engineer, CV"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://thisseasx.github.io/thisseasx-cv/"
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="ThisseasX" />
+    <meta
+      property="og:description"
+      content="Thisseas Xanthopoulos, Senior Software Engineer"
+    />
+    <meta
+      property="og:image"
+      content="https://thisseasx.github.io/thisseasx-cv/images/og-image.webp"
+    />
+
+    <!-- Profile Tags -->
+    <meta property="og:profile:first_name" content="Thisseas" />
+    <meta property="og:profile:last_name" content="Xanthopoulos" />
+    <meta property="og:profile:username" content="ThisseasX" />
+    <meta property="og:profile:gender" content="male" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="thisseasx.github.io" />
+    <meta
+      property="twitter:url"
+      content="https://thisseasx.github.io/thisseasx-cv/"
+    />
+    <meta name="twitter:title" content="ThisseasX" />
+    <meta
+      name="twitter:description"
+      content="Thisseas Xanthopoulos, Senior Software Engineer"
+    />
+    <meta
+      name="twitter:image"
+      content="https://thisseasx.github.io/thisseasx-cv/images/og-image.webp"
+    />
+  </head>
+
+  <body class="root">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <img
+          class="sidebar__avatar"
+          src="images/avatar-thumbnail.webp"
+          alt="Thisseas Xanthopoulos"
+        />
+        <h1 class="sidebar__title">Thisseas Xanthopoulos</h1>
+      </div>
+
+      <section class="info-section">
+        <h2 class="info-section__title">Personal Info</h2>
+
+        <div class="info-container personal-info">
+          <div class="info-block">
+            <p class="info-block__item">Address</p>
+            <p class="info-block__item">14, Asteropis Street, Pagrati</p>
+            <p class="info-block__item">Athens, 11633</p>
+          </div>
+
+          <div class="info-block">
+            <p class="info-block__item">Phone</p>
+            <p class="info-block__item">694 761 7476</p>
+          </div>
+
+          <div class="info-block">
+            <p class="info-block__item">E-mail</p>
+            <p class="info-block__item">
+              <a
+                class="link"
+                href="mailto:Thisseas%20Xanthopoulos<thisseasx@yahoo.com>"
+              >
+                thisseasx@yahoo.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <h2 id="skills-section-title" class="info-section__title">
+          Software Skills
+        </h2>
+
+        <div class="info-block info-container">
+          <div class="skills">
+            <div class="skills__item">
+              <p>Java</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>C#</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>SQL | NoSQL</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>JavaScript | TypeScript</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>Node.js</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>GraphQL | Yoga</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>React | Redux | RxJS</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+
+            <div class="skills__item">
+              <p>Next.js | Gatsby</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar__inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <h2 class="info-section__title">Other Skills</h2>
+
+        <ul class="info-list info-container">
+          <li class="info-list__item">Software Architecture</li>
+          <li class="info-list__item">Servant Leadership</li>
+          <li class="info-list__item">Empathy</li>
+          <li class="info-list__item">Coaching</li>
+          <li class="info-list__item">Teaching</li>
+        </ul>
+      </section>
+
+      <section class="info-section">
+        <h2 class="info-section__title">Languages</h2>
+
+        <ul class="info-list info-container">
+          <li class="info-list__item">Greek</li>
+          <li class="info-list__item">English</li>
+          <li class="info-list__item">French</li>
+        </ul>
+      </section>
+
+      <section class="info-section">
+        <h2 class="info-section__title">Interests</h2>
+
+        <ul class="info-list info-container">
+          <li class="info-list__item">Motion UI | Animations</li>
+          <li class="info-list__item">
+            PWA <strong>(like this page!)</strong>
+          </li>
+          <li class="info-list__item">Micro-Frontend</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Main -->
+    <main class="content">
+      <h2 class="title">Senior Software Engineer</h2>
+
+      <p class="summary">
+        Experienced professional with a demonstrated history of working in big
+        corporate environments, leading high-performance teams in creating
+        business-critical B2B applications. Eager to push all known boundaries,
+        developing cutting-edge user interfaces to perfection and architecting
+        complex systems
+      </p>
+
+      <section class="history">
+        <h2 class="history__heading">Work History</h2>
+
+        <div class="history__content">
+          <div class="history-block">
+            <p>2024-01 - 2024-09</p>
+
+            <div>
+              <h3 class="history-block__title">
+                Senior Software Engineer | Team Lead
+              </h3>
+
+              <div class="history-block__subtitle">
+                <p>Agile Actors, Athens</p>
+                <p>Hellenic Telecommunications Organisation S.A. (OTE)</p>
+              </div>
+
+              <div class="history-block__content">
+                <div>
+                  <ul>
+                    <li class="list-item--plus">
+                      Coordinate multiple Backend teams in tandem with the
+                      Frontend team to implement complex cross-system journeys
+                    </li>
+                    <li class="list-item--plus">
+                      Guide the team to continuous technical and soft skill
+                      growth and excellence
+                    </li>
+                    <li class="list-item--plus">
+                      Take initiatives to bring more value to the organization
+                      and the team
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <p>2022-08 - 2024-01</p>
+
+            <div>
+              <h3 class="history-block__title">
+                Software Engineer | Team Lead
+              </h3>
+
+              <div class="history-block__subtitle">
+                <p>Agile Actors, Athens</p>
+                <p>Hellenic Telecommunications Organisation S.A. (OTE)</p>
+              </div>
+
+              <div class="history-block__content">
+                <div>
+                  <ul>
+                    <li class="list-item--plus">
+                      Lead the Frontend Development team
+                    </li>
+                    <li class="list-item--disc">
+                      Design solutions for the customer
+                    </li>
+                    <li class="list-item--disc">
+                      Pioneer the architecture of all projects
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <p>2021-01 - 2022-08</p>
+
+            <div>
+              <h3 class="history-block__title">Software Engineer | Co-Lead</h3>
+
+              <div class="history-block__subtitle">
+                <p>Agile Actors, Athens</p>
+                <p>Hellenic Telecommunications Organisation S.A. (OTE)</p>
+              </div>
+
+              <div class="history-block__content">
+                <div>
+                  <ul>
+                    <li class="list-item--disc">React | Redux | RxJS</li>
+                    <li class="list-item--disc">Gatsby | Next.js</li>
+                    <li class="list-item--disc">Node.js | MongoDB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <p>2019-07 - 2020-12</p>
+
+            <div>
+              <h3 class="history-block__title">Front-End Developer</h3>
+
+              <div class="history-block__subtitle">
+                <p>Agile Actors, Athens</p>
+                <p>Eurolife FFH</p>
+              </div>
+
+              <div class="history-block__content">
+                <div>
+                  <ul>
+                    <li class="list-item--disc">React | Redux | RxJS</li>
+                    <li class="list-item--disc">Webpack | Material UI</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <p>2018-09 - 2019-07</p>
+
+            <div>
+              <h3 class="history-block__title">Full-Stack Developer</h3>
+
+              <div class="history-block__subtitle">
+                <p>Intralot S.A.</p>
+              </div>
+
+              <div class="history-block__content">
+                <div>
+                  <ul>
+                    <li class="list-item--disc">Java 8 | Spring Boot</li>
+                    <li class="list-item--disc">C# | .NET | nHibernate ORM</li>
+                    <li class="list-item--disc">MySQL | Oracle DB</li>
+                    <li class="list-item--disc">JavaScript | ES5 | jQuery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-block">
+            <p>2017-01 - 2018-06</p>
+
+            <div>
+              <h3 class="history-block__title">Android Development Teacher</h3>
+
+              <div class="history-block__subtitle">
+                <p>KORELKO Distance</p>
+              </div>
+
+              <div class="history-block__content">
+                <div>
+                  <ul>
+                    <li class="list-item--disc">
+                      Guide students remotely through the learning material
+                    </li>
+                    <li class="list-item--disc">
+                      Create custom-tailored exercises for students
+                    </li>
+                    <li class="list-item--disc">
+                      Grade exam papers and exercises
+                    </li>
+                    <li class="list-item--disc">Rewrite the curriculum</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

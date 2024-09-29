@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: local(OpenSans),
+    url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('opentype')
+      tech('variations'),
+    url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('opentype');
+  font-display: swap;
+}
